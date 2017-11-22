@@ -15,8 +15,8 @@ namespace Exercicio1
         //Entry dados;
         //dados.BindingContext = txtEmail;
 
-        string email;
-        bool flag_email;
+        //string email;
+        //bool flag_email;
 
         public ConfigPage()
         {
@@ -28,18 +28,18 @@ namespace Exercicio1
             if (scEmail.On)
             {
                 txtEmail.IsEnabled = true;
-                flag_email = true;
+                //flag_email = true;
             }
             else
             {
                 txtEmail.IsEnabled = false;
-                flag_email = email;
+                //flag_email = email;
             }
         }
 
         private void txtEmail_Completed(object sender, EventArgs e)
         {
-            email = txtEmail.Text;
+            //email = txtEmail.Text;
         }
     }
 }

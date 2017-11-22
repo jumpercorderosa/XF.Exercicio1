@@ -6,7 +6,7 @@
         <TableView>
             <TableView.Root>
                 <TableSection Title="Privacidade">
-                    <SwitchCell Text="Aceita receber email?" x:Name="scEmail" OnChanged="scEmail_Switched" Text="{Binding FlagEmail}"/>
+                    <SwitchCell Text="Aceita receber email?" x:Name="scEmail" OnChanged="scEmail_Switched" On="{Binding FlagEmail, Mode=OneWay}"/>
                     <Entry Placeholder="Informe seu email" x:Name="txtEmail" Completed="txtEmail_Completed" Text="{Binding Email}}"/>
                 </TableSection>
             </TableView.Root>
